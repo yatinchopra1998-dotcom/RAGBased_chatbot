@@ -67,9 +67,9 @@ if pdf_file:
     # Display the chat history
     for message in st.session_state.history:
         if message['role'] == 'user':
-            st.info(f"User:[{message['text']}]")
+            st.info(f"User:{message['text']}")
         else:
-            st.success(f"CHATBOT:[{message['text']}]")
+            st.success(f"CHATBOT:{message['text']}")
 
     
     # Input from the user using streamlit form
